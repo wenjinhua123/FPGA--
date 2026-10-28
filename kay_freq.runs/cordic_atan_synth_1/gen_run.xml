@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="cordic_atan_synth_1" LaunchPart="xczu47dr-ffve1156-2-i" LaunchTime="1792897671">
+  <File Type="PA-TCL" Name="cordic_atan.tcl"/>
+  <File Type="REPORTS-TCL" Name="cordic_atan_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cordic_atan.vds"/>
+  <File Type="RDS-UTIL" Name="cordic_atan_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cordic_atan_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cordic_atan.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cordic_atan">
+    <File Path="$PSRCDIR/sources_1/ip/cordic_atan/cordic_atan.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cordic_atan"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cordic_atan">
+    <File Path="$PSRCDIR/sources_1/ip/cordic_atan/cordic_atan.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cordic_atan"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,77 @@
+Warning: Unable to locate a personal folder for $
+[警告: P 文件 D:\Model_Composer\2022.2\simulink\hdl\constantaction.p 早于 MATLAB 文件 D:\Model_Composer\2022.2\simulink\hdl\constantaction.m。
+D:\Model_Composer\2022.2\simulink\hdl\constantaction.p 可能已过时，而且可能需要重新生成。
+键入 "help pcode" 可获取有关生成 P 文件的信息。] 
+[> 位置：XmcUpdateGUI/doAction
+位置: XmcUpdateGUI/execute
+位置: XmcUpdateGUI/updateGUI
+位置: probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: P 文件 D:\Model_Composer\2022.2\simulink\hdl\xlslice_init.p 早于 MATLAB 文件 D:\Model_Composer\2022.2\simulink\hdl\xlslice_init.m。
+D:\Model_Composer\2022.2\simulink\hdl\xlslice_init.p 可能已过时，而且可能需要重新生成。
+键入 "help pcode" 可获取有关生成 P 文件的信息。] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: P 文件 D:\Model_Composer\2022.2\simulink\hdl\xlmux_init.p 早于 MATLAB 文件 D:\Model_Composer\2022.2\simulink\hdl\xlmux_init.m。
+D:\Model_Composer\2022.2\simulink\hdl\xlmux_init.p 可能已过时，而且可能需要重新生成。
+键入 "help pcode" 可获取有关生成 P 文件的信息。] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem3/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem2/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem1/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem4/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem5/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem6/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: '输出端口 1' of 'kay1024_freq_16ch_test/Subsystem/Subsystem16/Subsystem7/CORDIC ATAN' is not connected.] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 9)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 8)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 7)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 6)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 5)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 4)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 3)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 2)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+[警告: 在 'kay1024_freq_16ch_test/Subsystem' 上找到未连接的输出信号线(输出端口: 1)] 
+[> 位置：probe_frequency_types (第 15 行)
+位置: run (第 91 行)] 
+FREQUENCY_TYPE_BLOCK=kay1024_freq_16ch_test/Subsystem/*fs/2/pi
+{错误使用 probe_frequency_types (第 20 行)
+Invalid Simulink object name: kay1024_freq_16ch_test/Subsystem/*fs/2/pi.
+
+出错 run (第 91 行)
+evalin('caller', strcat(script, ';')); - Show complete stack trace
+Caused by:
+    错误使用 probe_frequency_types (第 20 行)
+    No block called '*fs' could be found. - Show complete stack trace
+} 

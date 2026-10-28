@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_iq_kay_freq_8lane_lookahead_behav/xsimk.exe -simmode gui -wdb tb_iq_kay_freq_8lane_lookahead_behav.wdb -simrunnum 0 -socket 64443
+Design successfully loaded
+Design Loading Memory Usage: 151392 KB (Peak: 151392 KB)
+Design Loading CPU Usage: 218 ms
+Simulation completed
+Simulation Memory Usage: 151392 KB (Peak: 151392 KB)
+Simulation CPU Usage: 1218 ms

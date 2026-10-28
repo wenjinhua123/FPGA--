@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/sim/cordic_atan.vhd,1792897671,vhdl,,,,cordic_atan,,,,,,,,
+E:/FPGA/kay_freq.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sim_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/tb_iq_kay_freq_8lane_lookahead.sv,1793015065,systemVerilog,,,,tb_iq_kay_freq_8lane_lookahead,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step02_complex_conj_mul_pipe/complex_conj_mul_pipe.v,1792658259,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step08_iq_kay_freq_8lane/iq_kay_freq_8lane.v,,complex_conj_mul_pipe,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step03_complex_conj_mul_8lane/complex_conj_mul_8lane.v,1792669860,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step02_complex_conj_mul_pipe/complex_conj_mul_pipe.v,,complex_conj_mul_8lane,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step05_iq_phase_8lane/iq_phase_8lane.v,1792901001,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_lookahead_1024_8lane.v,,iq_phase_8lane,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step07_kay_recursive_1024_8lane/kay_recursive_1024_8lane.v,1792922801,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_sum_to_freq_q20.v,,kay_recursive_1024_8lane,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step08_iq_kay_freq_8lane/iq_kay_freq_8lane.v,1792925483,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/iq_kay_freq_8lane_lookahead.v,,iq_kay_freq_8lane,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/iq_kay_freq_8lane_lookahead.v,1793020586,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step05_iq_phase_8lane/iq_phase_8lane.v,,iq_kay_freq_8lane_lookahead,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_lookahead_1024_8lane.v,1793014793,verilog,,E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step07_kay_recursive_1024_8lane/kay_recursive_1024_8lane.v,,kay_lookahead_1024_8lane,,uvm,,,,,,
+E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_sum_to_freq_q20.v,1793016636,verilog,,,,kay_sum_to_freq_q20;kay_sum_to_freq_q20_plus1,,uvm,,,,,,

@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../kay_freq.gen/sources_1/ip/cordic_atan/sim/cordic_atan.vhd" \
+
+# Do not sort compile order
+nosort

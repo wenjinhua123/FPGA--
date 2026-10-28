@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step03_complex_conj_mul_8lane/complex_conj_mul_8lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complex_conj_mul_8lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step02_complex_conj_mul_pipe/complex_conj_mul_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complex_conj_mul_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step08_iq_kay_freq_8lane/iq_kay_freq_8lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iq_kay_freq_8lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/iq_kay_freq_8lane_lookahead.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iq_kay_freq_8lane_lookahead
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step05_iq_phase_8lane/iq_phase_8lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iq_phase_8lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_lookahead_1024_8lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kay_lookahead_1024_8lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step07_kay_recursive_1024_8lane/kay_recursive_1024_8lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kay_recursive_1024_8lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/kay_freq.srcs/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_sum_to_freq_q20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kay_sum_to_freq_q20
+INFO: [VRFC 10-311] analyzing module kay_sum_to_freq_q20_plus1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/kay_freq.srcs/sim_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/tb_iq_kay_freq_8lane_lookahead.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_iq_kay_freq_8lane_lookahead

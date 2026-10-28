@@ -1,0 +1,1 @@
+cordic_atan.vhd,vhdl,xil_defaultlib,../../../../kay_freq.gen/sources_1/ip/cordic_atan/sim/cordic_atan.vhd,

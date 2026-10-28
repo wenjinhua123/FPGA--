@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu47dr-ffve1156-2-i" LaunchTime="1793178162" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/iq_kay_freq_8lane.dcp">
+  <File Type="PA-TCL" Name="iq_kay_freq_8lane_lookahead.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="iq_kay_freq_8lane_lookahead_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="iq_kay_freq_8lane_lookahead_reports.tcl"/>
+  <File Type="RDS-RDS" Name="iq_kay_freq_8lane_lookahead.vds"/>
+  <File Type="RDS-UTIL" Name="iq_kay_freq_8lane_lookahead_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="iq_kay_freq_8lane_lookahead_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="iq_kay_freq_8lane_lookahead.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="iq_kay_freq_8lane_lookahead_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="iq_kay_freq_8lane_lookahead_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step03_complex_conj_mul_8lane/complex_conj_mul_8lane.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step03_complex_conj_mul_8lane/complex_conj_mul_8lane.v"/>
+        <Attr Name="ImportTime" Val="1792669860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step02_complex_conj_mul_pipe/complex_conj_mul_pipe.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step02_complex_conj_mul_pipe/complex_conj_mul_pipe.v"/>
+        <Attr Name="ImportTime" Val="1792658259"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step05_iq_phase_8lane/iq_phase_8lane.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step05_iq_phase_8lane/iq_phase_8lane.v"/>
+        <Attr Name="ImportTime" Val="1792901001"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_lookahead_1024_8lane.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step10_kay1024_8lane_timing/kay_lookahead_1024_8lane.v"/>
+        <Attr Name="ImportTime" Val="1793014793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/kay_sum_to_freq_q20.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step10_kay1024_8lane_timing/kay_sum_to_freq_q20.v"/>
+        <Attr Name="ImportTime" Val="1793016636"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step10_kay1024_8lane_timing/iq_kay_freq_8lane_lookahead.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step10_kay1024_8lane_timing/iq_kay_freq_8lane_lookahead.v"/>
+        <Attr Name="ImportTime" Val="1793020586"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step07_kay_recursive_1024_8lane/kay_recursive_1024_8lane.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step07_kay_recursive_1024_8lane/kay_recursive_1024_8lane.v"/>
+        <Attr Name="ImportTime" Val="1792922801"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step08_iq_kay_freq_8lane/iq_kay_freq_8lane.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step08_iq_kay_freq_8lane/iq_kay_freq_8lane.v"/>
+        <Attr Name="ImportTime" Val="1792925483"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/complex_conj_mul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga_tutorial/step06_kay_recursive_1024/kay_recursive_1024.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="C:/Users/Administrator/Desktop/Kay/fpga/fpga_tutorial/step06_kay_recursive_1024/kay_recursive_1024.v"/>
+        <Attr Name="ImportTime" Val="1792907411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="iq_kay_freq_8lane_lookahead"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/iq_kay_freq_8lane.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_atan"/>
+</GenRun>

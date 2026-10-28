@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Oct 25 11:07:52 2026
+# Process ID: 18772
+# Current directory: E:/FPGA/kay_freq.runs/cordic_atan_synth_1
+# Command line: vivado.exe -log cordic_atan.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_atan.tcl
+# Log file: E:/FPGA/kay_freq.runs/cordic_atan_synth_1/cordic_atan.vds
+# Journal file: E:/FPGA/kay_freq.runs/cordic_atan_synth_1\vivado.jou
+# Running On: PC-202205071326, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 137167 MB
+#-----------------------------------------------------------
+source cordic_atan.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: cordic_atan
+Command: synth_design -top cordic_atan -part xczu47dr-ffve1156-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu47dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu47dr'
+INFO: [Device 21-403] Loading part xczu47dr-ffve1156-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32700
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1883.773 ; gain = 363.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cordic_atan' [e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/synth/cordic_atan.vhd:70]
+	Parameter C_ARCHITECTURE bound to: 2 - type: integer 
+	Parameter C_CORDIC_FUNCTION bound to: 3 - type: integer 
+	Parameter C_COARSE_ROTATE bound to: 1 - type: integer 
+	Parameter C_DATA_FORMAT bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLK bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 33 - type: integer 
+	Parameter C_ITERATIONS bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_PHASE_FORMAT bound to: 1 - type: integer 
+	Parameter C_PIPELINE_MODE bound to: -2 - type: integer 
+	Parameter C_PRECISION bound to: 0 - type: integer 
+	Parameter C_ROUND_MODE bound to: 3 - type: integer 
+	Parameter C_SCALE_COMP bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_PHASE_TDATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_S_AXIS_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_CARTESIAN_TDATA_WIDTH bound to: 80 - type: integer 
+	Parameter C_S_AXIS_CARTESIAN_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cordic_v6_0_18' declared at 'e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/hdl/cordic_v6_0_vh_rfs.vhd:10135' bound to instance 'U0' of component 'cordic_v6_0_18' [e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/synth/cordic_atan.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'cordic_atan' (0#1) [e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/synth/cordic_atan.vhd:70]
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_14_lut6_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_14_lut6_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_14_lut6_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_14_lut6_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_14_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_14_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_14_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_lut6_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_v12_0_14_lut6_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_14_lut6_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_14_lut6_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_14_lut6_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_14_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_14_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_14_legacy__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_14_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_bit__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[36] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[35] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[34] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[33] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[32] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[31] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[30] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[29] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[28] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[27] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[26] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[25] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[24] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[23] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[22] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[21] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[20] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[19] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[18] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[17] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[16] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[15] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[14] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[13] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[12] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[11] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[10] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[9] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[8] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[7] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[6] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[5] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[4] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[3] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[2] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[1] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_x_in[0] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[36] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[35] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[34] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[33] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[32] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[31] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[30] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[29] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[28] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[27] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[26] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[25] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[24] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[23] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[22] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[21] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[20] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[19] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[18] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[17] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[16] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[15] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[14] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[13] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[12] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[11] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[10] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[9] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[8] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[7] in module cordic_out_config is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_y_in[6] in module cordic_out_config is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 2485.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7204 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/cordic_atan_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/FPGA/kay_freq.gen/sources_1/ip/cordic_atan/cordic_atan_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/FPGA/kay_freq.runs/cordic_atan_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FPGA/kay_freq.runs/cordic_atan_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2485.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 2485.082 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu47dr-ffve1156-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/FPGA/kay_freq.runs/cordic_atan_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2485.082 ; gain = 964.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2509.012 ; gain = 988.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2529.059 ; gain = 1008.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2545.930 ; gain = 1025.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |   129|
+|2     |LUT2    |  1248|
+|3     |LUT3    |  2168|
+|4     |LUT4    |    66|
+|5     |MUXCY   |  3350|
+|6     |SRLC32E |     5|
+|7     |XORCY   |  3299|
+|8     |FDRE    |  3549|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 543 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2550.379 ; gain = 1030.090
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 2550.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6649 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2667.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 465 instances were transformed.
+  (CARRY4) => CARRY8: 465 instances
+
+Synth Design complete, checksum: 3153f0a0
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2667.977 ; gain = 2201.539
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/kay_freq.runs/cordic_atan_synth_1/cordic_atan.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cordic_atan, cache-ID = 886ee35836650c4b
+INFO: [Coretcl 2-1174] Renamed 725 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/kay_freq.runs/cordic_atan_synth_1/cordic_atan.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cordic_atan_utilization_synth.rpt -pb cordic_atan_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 25 11:08:48 2026...

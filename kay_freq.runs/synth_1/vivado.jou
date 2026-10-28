@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct 28 17:02:43 2026
+# Process ID: 32256
+# Current directory: E:/FPGA/kay_freq.runs/synth_1
+# Command line: vivado.exe -log iq_kay_freq_8lane_lookahead.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source iq_kay_freq_8lane_lookahead.tcl
+# Log file: E:/FPGA/kay_freq.runs/synth_1/iq_kay_freq_8lane_lookahead.vds
+# Journal file: E:/FPGA/kay_freq.runs/synth_1\vivado.jou
+# Running On: PC-202205071326, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 24, Host memory: 137167 MB
+#-----------------------------------------------------------
+source iq_kay_freq_8lane_lookahead.tcl -notrace
