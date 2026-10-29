@@ -1,16 +1,21 @@
 `timescale 1ns/1ps
 // SysGen boundary: Fix30_18 radians in chronological order, after the
 // original instantaneous-frequency CORDIC, BEFORE multiplication by Fs/(2*pi).
-// clk/ce are supplied by SysGen. valid_in is aligned with the phase ports.
+// clk/ce are supplied by SysGen. valid_in is an internal front-end ready flag.
+// FPGA registers start with a one-cycle power-on reset; no reset pin is needed.
 // Each output window ends after phase6; phase7 still updates the sliding state.
 module kay1024_phase_blackbox (
-    input clk, input ce, input rst, input valid_in,
+    input clk, input ce, input valid_in,
     input [29:0] phase0, phase1, phase2, phase3,
     input [29:0] phase4, phase5, phase6, phase7,
-    output reg [31:0] freq_q20,
-    output reg [15:0] freq_q4,
-    output reg valid_out
+    output reg [31:0] freq_q20
 );
+    initial begin
+        freq_q20 = 32'd0;
+    end
+    reg power_on_reset = 1'b1;
+    always @(posedge clk) if (ce) power_on_reset <= 1'b0;
+    wire rst = power_on_reset;
     wire signed [51:0] weighted_sum;
     wire sum_valid, scale_valid;
     wire signed [31:0] scaled_mhz;
@@ -28,18 +33,11 @@ module kay1024_phase_blackbox (
         .clk(clk), .ce(ce), .rst(rst), .valid_in(sum_valid),
         .weighted_sum(weighted_sum), .valid_out(scale_valid), .freq_q20(scaled_mhz)
     );
-    wire signed [32:0] mhz_extended = {scaled_mhz[31],scaled_mhz};
-    wire signed [32:0] rounded_q4 =
-        (mhz_extended + (scaled_mhz[31] ? 33'sd32767 : 33'sd32768)) >>> 16;
     always @(posedge clk) begin
         if (rst) begin
-            freq_q20 <= 0; freq_q4 <= 0; valid_out <= 0;
+            freq_q20 <= 0;
         end else if (ce) begin
-            valid_out <= scale_valid;
-            if (scale_valid) begin
-                freq_q20 <= scaled_mhz;
-                freq_q4 <= rounded_q4[15:0];
-            end
+            if (scale_valid) freq_q20 <= scaled_mhz;
         end
     end
 endmodule

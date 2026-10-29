@@ -2,18 +2,12 @@ function kay1024_phase_blackbox_config(this_block)
 % Pure Verilog sources; no unresolved CORDIC/IP dependencies in this Black Box.
 this_block.setTopLevelLanguage('Verilog');
 this_block.setEntityName('kay1024_phase_blackbox');
-this_block.addSimulinkInport('rst');
 this_block.addSimulinkInport('valid_in');
 for lane=0:7, this_block.addSimulinkInport(sprintf('phase%d',lane)); end
 this_block.addSimulinkOutport('freq_q20');
-this_block.addSimulinkOutport('freq_q4');
-this_block.addSimulinkOutport('valid_out');
 this_block.port('freq_q20').setType('Fix_32_20');
-this_block.port('freq_q4').setType('Fix_16_4');
-this_block.port('valid_out').setType('Bool');
-this_block.port('valid_out').useHDLVector(false);
 if this_block.inputTypesKnown
-    for name={'rst','valid_in'}
+    for name={'valid_in'}
         this_block.port(name{1}).useHDLVector(false);
         if ~strcmp(this_block.port(name{1}).type,'Bool')
             this_block.setError([name{1} ' must be Boolean.']); return;
@@ -32,7 +26,7 @@ if this_block.inputRatesKnown
         this_block.setError('All inputs must share one synchronous sample rate.'); return;
     end
     this_block.addClkCEPair('clk','ce',rates(1));
-    for name={'freq_q20','freq_q4','valid_out'}, this_block.port(name{1}).setRate(rates(1)); end
+    this_block.port('freq_q20').setRate(rates(1));
 end
 here=fileparts(mfilename('fullpath'));
 this_block.clearSrcFiles;
