@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_iq_kay_chirp_behav/xsimk.exe -simmode gui -wdb tb_iq_kay_chirp_behav.wdb -simrunnum 0 -socket 62367
+Design successfully loaded
+Design Loading Memory Usage: 82536 KB (Peak: 82536 KB)
+Design Loading CPU Usage: 124 ms

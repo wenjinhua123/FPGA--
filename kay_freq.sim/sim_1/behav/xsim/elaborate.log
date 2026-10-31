@@ -1,6 +1,6 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: D:/vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L axi_utils_v2_0_6 -L cordic_v6_0_18 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_iq_kay_freq_8lane_lookahead_behav xil_defaultlib.tb_iq_kay_freq_8lane_lookahead xil_defaultlib.glbl -log elaborate.log 
+Running: D:/vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L axi_utils_v2_0_6 -L cordic_v6_0_18 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_iq_kay_chirp_behav xil_defaultlib.tb_iq_kay_chirp xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -136,12 +136,10 @@ Compiling architecture synth of entity cordic_v6_0_18.cordic_v6_0_18_viv [\cordi
 Compiling architecture xilinx of entity cordic_v6_0_18.cordic_v6_0_18 [\cordic_v6_0_18(c_architecture=2...]
 Compiling architecture cordic_atan_arch of entity xil_defaultlib.cordic_atan [cordic_atan_default]
 Compiling module xil_defaultlib.iq_phase_8lane
-Compiling module xil_defaultlib.kay_recursive_1024_8lane
-Compiling module xil_defaultlib.kay_sum_to_freq_q20
-Compiling module xil_defaultlib.iq_kay_freq_8lane_default
 Compiling module xil_defaultlib.kay_lookahead_1024_8lane_default
 Compiling module xil_defaultlib.kay_sum_to_freq_q20_plus1
 Compiling module xil_defaultlib.iq_kay_freq_8lane_lookahead_defa...
-Compiling module xil_defaultlib.tb_iq_kay_freq_8lane_lookahead
+Compiling module xil_defaultlib.tb_iq_kay_real_data(CHIRP=1)
+Compiling module xil_defaultlib.tb_iq_kay_chirp
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_iq_kay_freq_8lane_lookahead_behav
+Built simulation snapshot tb_iq_kay_chirp_behav
